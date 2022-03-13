@@ -1,0 +1,356 @@
+/*Import Tailwind*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global */
+
+:root {
+    @apply font-roboto;
+}
+
+* {
+    @apply antialiased box-border outline-0;
+}
+
+b, strong {
+    @apply font-extrabold;
+}
+
+h1 {
+    @apply text-5xl xl:text-7xl font-extrabold;
+}
+
+h2 {
+    @apply text-3xl md:text-4xl xl:text-4.5xl font-extrabold;
+}
+
+h3 {
+    @apply text-2xl md:text-3xl xl:text-4xl font-extrabold;
+}
+
+h4 {
+    @apply text-xl xl:text-3xl font-extrabold;
+}
+
+h5 {
+    @apply text-xl xl:text-2xl font-extrabold;
+}
+
+h6 {
+    @apply text-lg xl:text-xl font-extrabold;
+}
+
+p {
+    @apply sm:text-base md:text-lg xl:text-xl;
+    margin-bottom: 0.5rem;
+}
+
+ol {
+    @apply list-decimal;
+    padding-left: 18px;
+}
+
+ul {
+    @apply list-disc list-outside;
+    padding-inline-start: 40px;
+}
+
+ul, li {
+    @apply sm:text-base md:text-lg xl:text-xl;
+    margin-bottom: 0.2rem;
+}
+
+.page-template-generic p {
+    @apply mb-4;
+}
+
+/* Menu */
+
+.menu-item {
+    @apply py-3 px-6;
+}
+
+/* GERMAN GET IN TOUCH MENU */
+
+.menu-item-32 {
+    @apply border-4 border-solid border-mediumSpringGreen rounded-lg;
+    transition: all .3s;
+}
+
+.menu-item-32:hover, .menu-item-32 a:hover {
+    @apply cursor-pointer bg-mediumSpringGreen;
+}
+
+
+/* EN GET IN TOUCH MENU */
+
+.menu-item-36 {
+    @apply border-4 border-solid border-mediumSpringGreen rounded-lg;
+    transition: all .3s;
+}
+
+.menu-item-36:hover, .menu-item-36 a:hover {
+    @apply cursor-pointer bg-mediumSpringGreen;
+}
+
+.polylang_langswitcher {
+    @apply py-3 px-6 list-none flex sm:absolute sm:bottom-10 md:absolute md:bottom-10 lg:bottom-0 lg:relative xl:bottom-0 xl:relative ;
+}
+
+.lang-item {
+    @apply text-gray-500 lg:text-lightBlack text-5xl lg:text-xl mx-1; 
+}
+
+.current-lang {
+    @apply text-white lg:text-black ;
+}
+
+.inactive {
+    @apply hidden;
+    transition: all 1s;
+}
+
+.full-screen-menu {
+    @apply fixed top-0 left-0 bg-black w-full h-full z-50;
+}
+
+.btn-hover-with-svg svg {
+    transition: all .3s;
+}
+
+.btn-hover-with-svg:hover > svg {
+    @apply fill-white;
+    transform: translate3d(4px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+/* Newsletter Popup Menu */
+
+.newsletter-wrapper {
+    @apply fixed top-0 left-0 right-0 bottom-0 w-full h-full;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all ease 1s;
+    z-index: 99;
+}
+
+.center-screen-newsletter {
+   @apply max-w-2xl p-9 w-full h-auto rounded-lg bg-black text-white;
+}
+
+.news-hide {
+    @apply hidden opacity-0;
+
+}
+
+form.fluent_form_3 .wpf_has_custom_css.ff-btn-submit {
+    @apply border-4;
+}
+
+
+/* Fluent Form Subscribe  */
+
+.max-w-subscribe-area {
+    max-width: 927.7px;
+}
+
+
+.fluentform_wrapper_2 {
+    @apply relative;
+}
+
+.subscribe-input-wrapper div input[type=email] {
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 24px 0;
+    color: black;
+    font-size: 20px;
+}
+.subscribe-input-wrapper div input[type=email]:focus {
+    border-bottom: 1px solid black;
+}
+
+.subscribe-submit-wrapper {
+    @apply flex items-center;
+}
+
+.subscribe-submit-wrapper {
+    @apply absolute top-6 right-0;
+}
+
+.subscribe-submit-wrapper button img {
+    width: 30px;
+    transition: all 0.3s;
+}
+
+.subscribe-submit-wrapper button img:hover {
+    transform: translate3d(4px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+/* Fluent Form Success Message */
+
+.ff-message-success {
+    @apply rounded-lg border-black text-center ;
+}
+
+.fluentform_3_success {
+    @apply border-white !important;
+}
+
+ /* Homepage Animation */
+
+ .fade {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: 0%;
+    z-index: 5;
+    width: 80px;
+    height: 100%;
+    background: white;
+ }
+ 
+ .fade_right {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    left: auto;
+    bottom: 0%;
+    z-index: 5;
+    width: 80px;
+    height: 100%;
+    background: white;
+ }
+
+.wrapper-moving-logo {
+    width: 240%;
+    max-width: 2000px;
+}
+.moving-logo {
+    @apply grid grid-cols-4 grid-rows-3 items-center justify-items-center justify-center gap-x-12 gap-y-8 relative;
+	animation: movement 5s linear infinite;
+    user-select: none;
+    will-change: transform;
+    width: 80%;
+}
+
+.moving-logo2 {
+    @apply grid grid-cols-4 grid-rows-3 items-center justify-items-center justify-center gap-x-12 gap-y-8 relative;
+	animation: movement2 5s linear infinite;
+    user-select: none;
+    will-change: transform;
+    transform-style: preserve-3d;
+    width: 80%;
+}
+
+@keyframes movement {
+	0% {
+	    transform: translate3d(calc(-25% + 20vw), 0, 0);
+	}
+	
+    100% {
+        transform: translate3d(calc(-50% + 20vw), 0, 0);
+    }
+}
+
+@keyframes movement2 {
+	0% {
+	    transform: translate3d(calc(-25% + 20vw), 0, 0);
+	}
+	
+    100% {
+        transform: translate3d(calc(-50% + 20vw), 0, 0);
+    }
+}
+
+@media
+(min-width: 320px) and (max-width: 767px) {
+    .wrapper-moving-logo {
+        width: 560%;
+    }
+}
+/*  Home */
+
+.hero-heading-home span {
+    @apply underline;
+    text-decoration-color: #00fb92;
+}
+
+/* About Image */
+
+.about-image-wrapper {
+    @apply h-full w-full;
+    max-width: 600px;
+    max-height: 720px;
+}
+
+.about-img-repeaters {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+/* Header Animation */
+
+header {
+    animation: FlyIn 1s ease-in-out;
+    will-change: transform;
+}
+
+@keyframes FlyIn {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+
+    }
+}
+
+/* Hero Section Animation */
+
+#section-hero-home {
+    animation: SimpleOpacity 2s linear;
+}
+
+@keyframes SimpleOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Section 2 Animation */
+
+#section-2-home {
+    animation: FlyUp 1.5s ease-in-out;
+}
+
+@keyframes FlyUp {
+    0% {
+        transform: rotateY(90deg) translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0%);
+        opacity: 1;
+
+    }
+}
+
+/*  Cookie Animation */
+
+#cookie-wrapper {
+    transition: All 1s 0 ease;
+}
